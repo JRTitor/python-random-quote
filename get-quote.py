@@ -12,7 +12,7 @@ def main():
   rfr = random.randint(0, last)
 
   print(quotes[rnd], end = '')
-  print (quotes[rfr])
+  print(quotes[rfr])
 
 if __name__== "__main__":
   main()
