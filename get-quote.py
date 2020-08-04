@@ -1,11 +1,18 @@
+import random
+
 def main():
   print("Keep it logically awesome.")
 
   f = open("quotes.txt")
   quotes = f.readlines()
   f.close()
+  
+  last = len(quotes) - 1
+  rnd = random.randint(0, last)
+  rfr = random.randint(0, last)
 
-  print(quotes)
+  print(quotes[rnd], end = '')
+  print(quotes[rfr])
 
 if __name__== "__main__":
   main()
